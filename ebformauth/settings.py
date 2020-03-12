@@ -34,6 +34,11 @@ ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'auth.User'
 
+AUTHENTICATION_BACKENDS = [
+   'ebformauth.auth.authentication_backend.AuthenticationBackend',
+]
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
